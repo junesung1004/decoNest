@@ -240,7 +240,7 @@ main .side-desc-container {
 }
 main .side-desc-container h1 {
   font-size: var(--font--large--size);
-  letter-spacing: 0.5rem;
+  letter-spacing: 0.55rem;
   font-weight: var(--font--default--size);
 }
 main .side-desc-container .sub-title {
