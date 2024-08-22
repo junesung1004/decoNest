@@ -29,6 +29,7 @@
 
   // button color
   --main--color: #73675a;
+  --link--cyan--color: rgb(222, 243, 243);
 }
 
 body {
@@ -81,6 +82,7 @@ body {
         }
         &:hover {
           opacity: 1;
+          font-weight: var(--font--default--size);
           &::after {
             width: 100%;
           }
@@ -161,7 +163,7 @@ main {
           cursor: grab;
           width: 100%;
           height: 100%;
-          animation: slider 13.5s infinite linear;
+          animation: slider 12.1s infinite linear;
         }
       }
     }
@@ -179,6 +181,9 @@ main {
       width: 310px;
       height: 470px;
       margin-right: 50px;
+      opacity: 0;
+      transform: translateX("-100px");
+      transition: all 1.5s ease-in-out 0.2s;
       img {
         width: 100%;
         height: 100%;
@@ -188,6 +193,9 @@ main {
       width: 290px;
       height: 230px;
       margin-right: 50px;
+      opacity: 0;
+      transform: translateX("-100px");
+      transition: all 1.5s ease-in-out 0.5s;
       img {
         width: 100%;
         height: 100%;
@@ -199,6 +207,9 @@ main {
       align-items: end;
       justify-content: end;
       text-align: end;
+      opacity: 0;
+      transform: translateX("-100px");
+      transition: all 1.5s ease-in-out 0.7s;
       h1 {
         font-size: var(--font--large--size);
         color: var(--font--desc--color);
@@ -269,13 +280,33 @@ main {
       padding-bottom: 30px;
     }
     .desc-list {
-      display: flex;
-      gap: 30px;
-    }
-    p {
-      font-size: var(---font--smallmid-size);
-      line-height: 2;
-      margin-bottom: 100px;
+      ul {
+        display: flex;
+        gap: 30px;
+        margin-bottom: 100px;
+        li a {
+          position: relative;
+          font-size: var(---font--smallmid-size);
+          line-height: 2;
+
+          &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            transition: width 0.6s;
+            background-color: var(--link--cyan--color);
+          }
+          &:hover {
+            transform: scale(1.1);
+            &::after {
+              width: 100%;
+            }
+          }
+        }
+      }
     }
   }
 
@@ -289,6 +320,7 @@ main {
       width: 100%;
       height: 100%;
       display: grid;
+      cursor: pointer;
       grid-template-columns: repeat(3, 1fr); /* 3열 */
       grid-template-rows: repeat(7, 2fr); /* 4행 */
       grid-template-areas:
@@ -303,39 +335,159 @@ main {
       /* 영역별 배경색 */
       .area-a {
         grid-area: a;
+        transition: all 0.6s;
+        &:hover {
+          transform: scale(1.03);
+          opacity: 0.6;
+        }
+        .img {
+          transform: translateX(-50px);
+          transition: all 1.5s ease-in-out 0.2s;
+          opacity: 0;
+        }
       }
       .area-b {
         grid-area: b;
+        transition: all 0.6s;
+        &:hover {
+          transform: scale(1.03);
+          opacity: 0.6;
+        }
+        .img {
+          transform: translateX(-50px);
+          transition: all 1.5s ease-in-out 0.5s;
+          opacity: 0;
+        }
       }
       .area-c {
         grid-area: c;
+        transition: all 0.6s;
+        &:hover {
+          transform: scale(1.03);
+          opacity: 0.6;
+        }
+        .img {
+          transform: translateX(-50px);
+          transition: all 1.5s ease-in-out 0.7s;
+          opacity: 0;
+        }
       }
       .area-d {
         grid-area: d;
+        transition: all 0.6s;
+        &:hover {
+          transform: scale(1.03);
+          opacity: 0.6;
+        }
+        .img {
+          transform: translateX(-50px);
+          transition: all 1.5s ease-in-out 1s;
+          opacity: 0;
+        }
       }
       .area-e {
         grid-area: e;
+        transition: all 0.6s;
+        &:hover {
+          transform: scale(1.03);
+          opacity: 0.6;
+        }
+        .img {
+          transform: translateX(-50px);
+          transition: all 1.5s ease-in-out 0.2s;
+          opacity: 0;
+        }
       }
       .area-f {
         grid-area: f;
+        transition: all 0.6s;
+        &:hover {
+          transform: scale(1.03);
+          opacity: 0.6;
+        }
+        .img {
+          transform: translateX(-50px);
+          transition: all 1.5s ease-in-out 0.5s;
+          opacity: 0;
+        }
       }
       .area-g {
         grid-area: g;
+        transition: all 0.6s;
+        &:hover {
+          transform: scale(1.03);
+          opacity: 0.6;
+        }
+        .img {
+          transform: translateX(-50px);
+          transition: all 1.5s ease-in-out 0.7s;
+          opacity: 0;
+        }
       }
       .area-h {
         grid-area: h;
+        transition: all 0.6s;
+        &:hover {
+          transform: scale(1.03);
+          opacity: 0.6;
+        }
+        .img {
+          transform: translateX(-50px);
+          transition: all 1.5s ease-in-out 0.2s;
+          opacity: 0;
+        }
       }
       .area-i {
         grid-area: i;
+        transition: all 0.6s;
+        &:hover {
+          transform: scale(1.03);
+          opacity: 0.6;
+        }
+        .img {
+          transform: translateX(-80px);
+          transition: opacity 2.1s ease-out, transform 1.5s ease-out;
+          opacity: 0;
+        }
       }
       .area-j {
         grid-area: j;
+        transition: all 0.6s;
+        &:hover {
+          transform: scale(1.03);
+          opacity: 0.6;
+        }
+        .img {
+          transform: translateX(-100px);
+          transition: opacity 2.1s ease-out, transform 1.5s ease-out;
+          opacity: 0;
+        }
       }
       .area-k {
         grid-area: k;
+        transition: all 0.6s;
+        &:hover {
+          transform: scale(1.03);
+          opacity: 0.6;
+        }
+        .img {
+          transform: translateX(-50px);
+          transition: opacity 2.1s ease-out, transform 1.5s ease-out;
+          opacity: 0;
+        }
       }
       .area-l {
         grid-area: l;
+        transition: all 0.6s;
+        &:hover {
+          transform: scale(1.03);
+          opacity: 0.6;
+        }
+        .img {
+          transform: translateX(-50px);
+          transition: opacity 2.1s ease-out, transform 1.5s ease-out;
+          opacity: 0;
+        }
       }
     }
   }
