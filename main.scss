@@ -25,7 +25,7 @@
   --font--middle--size: 2rem;
   --font--smallmid-size: 1.3rem;
   --font--small--size: 1rem;
-  --font--2xsmall-size: 0.96rem;
+  --font--2xsmall-size: 0.8rem;
 
   //text-font family
   --font--family: "Spoqa Han Sans Neo", sans-serif;
@@ -1689,9 +1689,9 @@ main {
       }
       .h-nav-right {
         display: flex;
-        gap: 30px;
+        gap: 12px;
         letter-spacing: 0.05rem;
-        font-size: var(--font--small--size);
+        font-size: var(--font--2xsmall-size);
         li {
           position: relative;
           opacity: 0.5;
@@ -1724,7 +1724,7 @@ main {
     top: 0;
     left: 0;
     width: 100%;
-    height: 1600px;
+    height: 2000px;
     z-index: -9999; // 헤더 아래에 위치하도록 설정
 
     img {
@@ -1821,6 +1821,7 @@ main {
       color: var(--font--sub--color);
 
       .desc-img-left {
+        display: none;
         width: 350px;
         height: 300px;
         margin-left: 80px;
@@ -2179,6 +2180,7 @@ main {
       }
 
       .f-intro {
+        display: none;
         .intro-list {
           display: flex;
           gap: 30px;

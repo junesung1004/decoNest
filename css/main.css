@@ -18,7 +18,7 @@
   --font--middle--size: 2rem;
   --font--smallmid-size: 1.3rem;
   --font--small--size: 1rem;
-  --font--2xsmall-size: 0.96rem;
+  --font--2xsmall-size: 0.8rem;
   --font--family: "Spoqa Han Sans Neo", sans-serif;
   --main--color: #73675a;
   --link--cyan--color: rgb(222, 243, 243);
@@ -1563,9 +1563,9 @@ main .side-desc-image-container .img-wrap .area-l .img {
   }
   .h-container .h-wrapper .h-nav-right {
     display: flex;
-    gap: 30px;
+    gap: 12px;
     letter-spacing: 0.05rem;
-    font-size: var(--font--small--size);
+    font-size: var(--font--2xsmall-size);
   }
   .h-container .h-wrapper .h-nav-right li {
     position: relative;
@@ -1595,7 +1595,7 @@ main .side-desc-image-container .img-wrap .area-l .img {
     top: 0;
     left: 0;
     width: 100%;
-    height: 1600px;
+    height: 2000px;
     z-index: -9999;
   }
   .topBg img {
@@ -1689,6 +1689,7 @@ main .side-desc-image-container .img-wrap .area-l .img {
     color: var(--font--sub--color);
   }
   main .description-container .desc-img-left {
+    display: none;
     width: 350px;
     height: 300px;
     margin-left: 80px;
@@ -2022,6 +2023,9 @@ main .side-desc-image-container .img-wrap .area-l .img {
   .f-container .f-factory .f-wrap .factory-desc p {
     font-size: var(--font--smallmid-size);
     font-weight: var(--font--thin--size);
+  }
+  .f-container .f-factory .f-intro {
+    display: none;
   }
   .f-container .f-factory .f-intro .intro-list {
     display: flex;
