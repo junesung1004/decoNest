@@ -1174,7 +1174,7 @@ main {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 700px;
     z-index: -9999; // 헤더 아래에 위치하도록 설정
 
     img {
@@ -1763,12 +1763,13 @@ main {
       align-items: center;
       gap: 50px !important;
       margin-top: 50px;
+
       .intro-text-wrap {
         display: flex;
         flex-direction: column;
         letter-spacing: 0.09rem;
         .intro-title {
-          margin-left: 60px;
+          margin-left: 10px;
           font-size: var(--font--middle--size);
           margin-bottom: 30px;
           transform: translateX(-50px);
@@ -1776,6 +1777,7 @@ main {
           transition: all 1.1s ease-in-out 0.5s;
         }
         .intro-desc {
+          text-align: end;
           font-size: var(--font--smallmid-size);
           margin-left: 60px;
           transform: translateX(-50px);
@@ -1784,9 +1786,7 @@ main {
         }
       }
       .intro-slide-image-wrap {
-        display: none;
-        margin-right: 50px;
-        width: 290px;
+        width: 90%;
         height: 250px;
         overflow: hidden;
         position: relative;
@@ -1817,7 +1817,7 @@ main {
       max-width: 1250px;
       width: 100%;
       position: relative;
-      top: 150px;
+      top: 70px;
       color: var(--font--sub--color);
 
       .desc-img-left {
@@ -1906,6 +1906,7 @@ main {
     }
 
     .border-line {
+      display: none;
       width: 100%;
       height: 250px;
       border-bottom: 1px solid #dedede;
@@ -1913,6 +1914,7 @@ main {
     }
 
     .side-desc-container {
+      margin-top: 150px;
       color: var(--font--white--color);
       display: flex;
       flex-direction: column;
