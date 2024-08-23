@@ -142,7 +142,7 @@ main .intro-container .intro-text-wrap .intro-desc {
   transition: all 1.1s ease-in-out 1s;
 }
 main .intro-container .intro-slide-image-wrap {
-  width: 640px;
+  width: 600px;
   height: 440px;
   overflow: hidden;
   position: relative;
@@ -1595,8 +1595,9 @@ main .side-desc-image-container .img-wrap .area-l .img {
     top: 0;
     left: 0;
     width: 100%;
-    height: 2000px;
+    height: 2250px;
     z-index: -9999;
+    overflow: hidden;
   }
   .topBg img {
     width: 100%;
@@ -1640,7 +1641,7 @@ main .side-desc-image-container .img-wrap .area-l .img {
   }
   main .intro-container .intro-text-wrap .intro-title {
     margin-left: 10px;
-    font-size: var(--font--middle--size);
+    font-size: var(--font--large--size);
     margin-bottom: 30px;
     transform: translateX(-50px);
     opacity: 0;
@@ -1653,6 +1654,7 @@ main .side-desc-image-container .img-wrap .area-l .img {
     transform: translateX(-50px);
     opacity: 0;
     transition: all 1.1s ease-in-out 1s;
+    padding-right: 10px;
   }
   main .intro-container .intro-slide-image-wrap {
     width: 90%;
@@ -1997,6 +1999,9 @@ main .side-desc-image-container .img-wrap .area-l .img {
     opacity: 0;
   }
   .f-container {
+    position: relative;
+    overflow: hidden;
+    bottom: 0;
     background-color: var(--footer-bg--color);
     width: 100%;
     height: 100%;
