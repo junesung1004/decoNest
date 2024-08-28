@@ -1,3 +1,4 @@
+const div = document.createElement("div");
 const images = document.querySelectorAll(".img");
 const descLeft = document.querySelector(".desc-img-left");
 const descMiddle = document.querySelector(".desc-img-middle");
